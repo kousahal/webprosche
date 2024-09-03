@@ -17,6 +17,7 @@
 }
 
 /* Header */
+/* Header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -35,16 +36,28 @@
     gap: 20px;
 }
 
+.nav li {
+    /* Ensure each list item takes the same amount of space */
+    flex: 1;
+}
+
 .nav a {
+    display: block; /* Makes the entire link area clickable */
+    padding: 10px 20px; /* Adds padding for consistent button appearance */
     color: #fff;
+    background-color: #333; /* Dark background for button effect */
+    border-radius: 5px; /* Rounded corners */
     text-decoration: none;
+    text-align: center; /* Center text inside the button */
     font-weight: bold;
-    transition: color 0.3s;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
 }
 
 .nav a:hover {
-    color: #ccc;
+    background-color: #555; /* Lighter shade on hover */
+    color: #fff; /* Maintains text color on hover */
 }
+
 
 /* Hero Section */
 /* Hero Section */
